@@ -18,7 +18,7 @@ namespace AlphaParWcfServiceLibrary
             client = new MongoClient(
                new MongoClientSettings
                {
-                   Server = new MongoServerAddress("10.131.50.7", 27017),
+                   Server = new MongoServerAddress("192.168.1.20", 27017),
                    ServerSelectionTimeout = TimeSpan.FromSeconds(3),
                    Credential = MongoCredential.CreateCredential("admin", "MongoDBAdmin", "yeH7DG3d")
                }

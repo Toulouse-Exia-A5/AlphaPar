@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ad0fd3c0-8b2e-402b-a21b-860bc52329af" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="193a31ec-e0ed-4e1e-99cc-78f357aa74c2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,15 +19,15 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="https://10.131.50.7:8733/AlphaParWcfServiceLibrary.Service.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="https://alphapar-ws2016.alphapar.ga:8733/AlphaParWcfServiceLibrary.Service.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Service.wsdl" MetadataType="Wsdl" ID="d677c792-692d-46c4-90d6-74ff64bd77f6" SourceId="1" SourceUrl="https://alphapar-ws2016.alphapar.ga:8733/AlphaParWcfServiceLibrary.Service.svc?wsdl" />
-    <MetadataFile FileName="AlphaParWcfServiceLibrary.xsd" MetadataType="Schema" ID="1a2436f5-b3c2-4cc1-9d23-66340336471e" SourceId="1" SourceUrl="https://alphapar-ws2016.alphapar.ga:8733/AlphaParWcfServiceLibrary.Service.svc?xsd=xsd3" />
-    <MetadataFile FileName="AlphaParWcfServiceLibrary.disco" MetadataType="Disco" ID="e259beef-216f-4d29-a7ce-209a9b5fcd0d" SourceId="1" SourceUrl="https://alphapar-ws2016.alphapar.ga:8733/AlphaParWcfServiceLibrary.Service.svc?disco" />
-    <MetadataFile FileName="AlphaParWcfServiceLibrary1.xsd" MetadataType="Schema" ID="db029ee7-a71b-4cf9-867e-351fec234391" SourceId="1" SourceUrl="https://alphapar-ws2016.alphapar.ga:8733/AlphaParWcfServiceLibrary.Service.svc?xsd=xsd0" />
-    <MetadataFile FileName="AlphaParWcfServiceLibrary2.xsd" MetadataType="Schema" ID="f91250dd-846b-4a73-86ef-3c788a857cc2" SourceId="1" SourceUrl="https://alphapar-ws2016.alphapar.ga:8733/AlphaParWcfServiceLibrary.Service.svc?xsd=xsd1" />
-    <MetadataFile FileName="AlphaParWcfServiceLibrary3.xsd" MetadataType="Schema" ID="703f20b7-6f4f-4ef9-85bb-b5e4191b2abf" SourceId="1" SourceUrl="https://alphapar-ws2016.alphapar.ga:8733/AlphaParWcfServiceLibrary.Service.svc?xsd=xsd2" />
+    <MetadataFile FileName="Service.wsdl" MetadataType="Wsdl" ID="28fdd2f3-4cd8-45f4-b7f4-7ac7a388c71a" SourceId="1" SourceUrl="https://alphapar-ws2016.alphapar.ga:8733/AlphaParWcfServiceLibrary.Service.svc?wsdl" />
+    <MetadataFile FileName="AlphaParWcfServiceLibrary.xsd" MetadataType="Schema" ID="82596933-5d9d-467a-a08b-ada1053dfe66" SourceId="1" SourceUrl="https://alphapar-ws2016.alphapar.ga:8733/AlphaParWcfServiceLibrary.Service.svc?xsd=xsd3" />
+    <MetadataFile FileName="AlphaParWcfServiceLibrary.disco" MetadataType="Disco" ID="7902228d-42b4-4027-920d-65ea2de49ce7" SourceId="1" SourceUrl="https://alphapar-ws2016.alphapar.ga:8733/AlphaParWcfServiceLibrary.Service.svc?disco" />
+    <MetadataFile FileName="AlphaParWcfServiceLibrary1.xsd" MetadataType="Schema" ID="5bd9fd6e-5b4e-46e4-ab67-2386441db58b" SourceId="1" SourceUrl="https://alphapar-ws2016.alphapar.ga:8733/AlphaParWcfServiceLibrary.Service.svc?xsd=xsd0" />
+    <MetadataFile FileName="AlphaParWcfServiceLibrary2.xsd" MetadataType="Schema" ID="43bd3049-8dd5-4b20-ae50-db472ac3a260" SourceId="1" SourceUrl="https://alphapar-ws2016.alphapar.ga:8733/AlphaParWcfServiceLibrary.Service.svc?xsd=xsd1" />
+    <MetadataFile FileName="AlphaParWcfServiceLibrary3.xsd" MetadataType="Schema" ID="3e3f7d68-03da-4dde-9188-d3083805816d" SourceId="1" SourceUrl="https://alphapar-ws2016.alphapar.ga:8733/AlphaParWcfServiceLibrary.Service.svc?xsd=xsd2" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

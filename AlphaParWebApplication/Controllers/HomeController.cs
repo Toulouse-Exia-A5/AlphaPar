@@ -33,6 +33,11 @@ namespace AlphaParWebApplication.Controllers
         {
             if (Session["userToken"] != null)
                 return RedirectToAction("Index");
+            if (String.IsNullOrEmpty(loginInfo.username) || String.IsNullOrEmpty(loginInfo.password))
+            {
+                ViewBag.ErrorMessage = "Please provide username & password";
+                return RedirectToAction("Login");
+            }
             try
             {
                 string userToken = serviceRef.LoginWithAD(loginInfo.username, loginInfo.password);
@@ -110,6 +115,15 @@ namespace AlphaParWebApplication.Controllers
             if (Session["userToken"] == null)
                 return RedirectToAction("Login");
 
+            if (string.IsNullOrEmpty(client.address) ||
+                string.IsNullOrEmpty(client.firstname) ||
+                string.IsNullOrEmpty(client.lastname) ||
+                string.IsNullOrEmpty(client.phone)
+                )
+            {
+                ViewBag.ErrorMessage = "Please provide all required information to add a new client.";
+                return RedirectToAction("Index");
+            }
             try
             {
                 serviceRef.InsertClient(Session["userToken"].ToString(), client);

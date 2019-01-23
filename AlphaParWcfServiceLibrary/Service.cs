@@ -6,6 +6,7 @@ using System.ServiceModel;
 using System.Text;
 using System.DirectoryServices.AccountManagement;
 using AlphaParWcfServiceLibrary.Models;
+using System.ServiceModel.Web;
 
 namespace AlphaParWcfServiceLibrary
 {
@@ -37,12 +38,19 @@ namespace AlphaParWcfServiceLibrary
             }
             catch (Exception ex)
             {
+                dataAccessService.WriteLog(null, "GetClients failed");
                 throw ex;
             }
         }
 
         public Client InsertClient(string token, Client client)
         {
+            if (string.IsNullOrEmpty(client.address) || 
+                string.IsNullOrEmpty(client.firstname) || 
+                string.IsNullOrEmpty(client.lastname) || 
+                string.IsNullOrEmpty(client.phone)
+                )
+                throw new FaultException<ServiceFault>(new ServiceFault("Error: Please provide all required information for the new client."));
             try
             {
                 string username = authService.getUsernameByToken(token);
@@ -53,6 +61,7 @@ namespace AlphaParWcfServiceLibrary
             }
             catch (Exception ex)
             {
+                dataAccessService.WriteLog(null, "InsertClient failed");
                 throw ex;
             }
         }
@@ -69,6 +78,7 @@ namespace AlphaParWcfServiceLibrary
             }
             catch (Exception ex)
             {
+                dataAccessService.WriteLog(null, "DeleteClient failed. ClientID="+client.ID);
                 throw ex;
             }
         }
